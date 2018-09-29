@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": "./dist/",
+        "module": "commonjs",
+        // "target": "ES2017",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "sourceMap": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        // "noImplicitReturns": true,
+        "noEmitOnError": true,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        // "outDir": "./dist/",
+        // "module": "esnext",
+        "target": "es5",
+        "lib": [
+        "es6",
+        "dom"
+        ],
+        // "sourceMap": true,
+        "allowJs": true,
+        // "jsx": "react",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": false,
+        "noImplicitThis": true,
+        // "noImplicitAny": false,
+        // "moduleResolution": "node",
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": false
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "images"
+    ]
+}

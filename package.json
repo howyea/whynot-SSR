@@ -1,0 +1,44 @@
+{
+  "name": "styled-components-server-side-rendering",
+  "version": "1.0.0",
+  "description": "React server side rendering with Styled Components",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jobeir/styled-components-server-side-rendering"
+  },
+  "author": "Dennis Brotzky <dennis@jobeir.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Jobeir/styled-components-server-side-rendering",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.9.4",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "@types/styled-components": "^3.0.1",
+    "@types/tape": "^4.2.32",
+    "@types/webpack": "^4.4.10",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "json-loader": "^0.5.4",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^4.5.0",
+    "typescript": "^2.7.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.2.4"
+  }
+}
