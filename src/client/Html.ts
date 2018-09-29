@@ -5,9 +5,15 @@
  */
 const Html = ({ body, styles, title }) => `
   <!DOCTYPE html>
-  <html>
+  <html style="font-size: 312.5%">
     <head>
-      <title>${title}</title>
+        <title>${title}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/react-md@1.5.0/dist/react-md.indigo-pink.min.css">
+        <link rel="icon" type="image/png" href="/assets/img/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
       ${styles}
     </head>
     <body style="margin:0">

@@ -1,5 +1,8 @@
 import * as React from 'react';
-import { AppContainer } from "./styled";
+import {Switch, Route} from 'react-router-dom';
+import Main from './app/components/App';
+import Ad from "./app/components/ad";
+// import { AppContainer } from "./styled";
 export interface AppProps {
     
 }
@@ -15,10 +18,10 @@ class App extends React.Component<AppProps, AppState> {
     }
     render() { 
         return ( 
-            
-            <AppContainer>
-                <div>沙发</div>
-            </AppContainer>
+                <Switch>
+                    <Route path="/app" component={Main} />
+                    <Route exact path="/" component={Ad}/>
+                </Switch>
          );
     }
 }

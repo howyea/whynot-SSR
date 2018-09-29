@@ -1,13 +1,15 @@
 import * as express from 'express';
+import * as path from 'path';
 import * as React from 'react';
 import { renderToString } from 'react-dom/server';
+import { StaticRouter } from "react-router-dom";
 import App from './client/App';
 import Html from './client/Html';
 import { ServerStyleSheet } from 'styled-components'; // <-- importing ServerStyleSheet
 
 const port = 3000;
 const server = express();
-
+server.use(express.static(path.resolve(__dirname, '.')));
 // Creating a single index route to server our React application from.
 server.get('/', (req, res) => {
   /**
@@ -16,10 +18,15 @@ server.get('/', (req, res) => {
    * into our HTML template to send to the client.
    */
   const sheet = new ServerStyleSheet();
-
-  const body = renderToString(sheet.collectStyles(React.createElement(App))); // <-- collecting styles
+  const context = { };
+  const jsx = (
+      <StaticRouter context={ context } location={ req.url }>
+          <App />
+      </StaticRouter>
+  );
+  const body = renderToString(sheet.collectStyles( jsx )); // <-- collecting styles
   const styles = sheet.getStyleTags(); // <-- getting all the tags from the sheet
-  const title = 'Server side Rendering with Styled Components';
+  const title = 'Why Not';
 
   res.send(
     Html({
