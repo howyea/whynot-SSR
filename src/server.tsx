@@ -27,7 +27,7 @@ server.get('/', (req, res) => {
   );
   const body = renderToString(sheet.collectStyles( jsx )); // <-- collecting styles
   const styles = sheet.getStyleTags(); // <-- getting all the tags from the sheet
-  const title = 'Why Not too';
+  const title = 'Why Not';
 
   res.send(
     Html({

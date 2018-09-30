@@ -8,5 +8,5 @@ gulp.task('default', function() {
     .pipe(gulp.dest('dist/'));
   });
 gulp.task('watch', function () {
-    gulp.watch('./src/**/*', ['greet']); // 注意，任务列表是个数组，即使只有一个元素。
+    gulp.watch('./src/**/*', ['default']); // 注意，任务列表是个数组，即使只有一个元素。
 });

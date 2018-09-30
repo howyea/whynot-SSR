@@ -4,7 +4,9 @@
   "description": "React server side rendering with Styled Components",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/server",
+    "prod": "node ./dist/server",
+    "dev": "node ./server",
+    "watch": "gulp watch",
     "build": "webpack"
   },
   "repository": {
