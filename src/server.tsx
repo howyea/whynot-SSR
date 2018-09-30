@@ -7,9 +7,10 @@ import App from './client/App';
 import Html from './client/Html';
 import { ServerStyleSheet } from 'styled-components'; // <-- importing ServerStyleSheet
 
+
 const port = 3000;
 const server = express();
-server.use(express.static(path.resolve(__dirname, '.')));
+server.use(express.static('dist'));
 // Creating a single index route to server our React application from.
 server.get('/', (req, res) => {
   /**
@@ -26,7 +27,7 @@ server.get('/', (req, res) => {
   );
   const body = renderToString(sheet.collectStyles( jsx )); // <-- collecting styles
   const styles = sheet.getStyleTags(); // <-- getting all the tags from the sheet
-  const title = 'Why Not';
+  const title = 'Why Not too';
 
   res.send(
     Html({

@@ -4,7 +4,7 @@
   "description": "React server side rendering with Styled Components",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && node ./dist/server",
+    "start": "node ./dist/server",
     "build": "webpack"
   },
   "repository": {
@@ -28,14 +28,18 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.11.1",
     "file-loader": "^2.0.0",
+    "gulp": "^3.9.1",
     "json-loader": "^0.5.4",
+    "nodemon": "^1.18.4",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^4.5.0",
     "typescript": "^2.7.1",
     "url-loader": "^1.1.1",
+    "vinyl-named": "^1.1.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
-    "webpack-node-externals": "^1.2.0"
+    "webpack-node-externals": "^1.2.0",
+    "webpack-stream": "^5.1.1"
   },
   "dependencies": {
     "express": "^4.14.0",

@@ -3,12 +3,12 @@ const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 
 module.exports = {
-  entry: './src/server.tsx',
+ /*  entry: './src/server.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'server.js',
     publicPath: '/'
-  },
+  }, */
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
 },
